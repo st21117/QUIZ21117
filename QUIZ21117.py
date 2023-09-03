@@ -566,7 +566,7 @@ class Export:
             self.save_error_label.config(text="Invalid filename - {}".format(problem))
             self.filename_entry.config(bg="pink")
             print()
-        else:  # Otherwise, the file is successfully exported
+        else:
             filename = filename + ".txt"
             f = open(filename, "w+")
             # Quiz number, score, questions, answers and correct answers all written to text file, per quiz completed
