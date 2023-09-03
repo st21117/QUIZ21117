@@ -221,7 +221,7 @@ class Quiz:
         for i in range(self.no_questions):
             num1 = random.randint(self.lowest_number, self.highest_number)
             num2 = random.randint(self.lowest_number, self.highest_number)
-            # Based on the selected operation, a question (and corresponding answer) is formed using these numbers.
+            # Based on the selected operation, a question is formed using these numbers.
             if operation == "Addition":
                 question = "{} + {} = ?".format(num1, num2)
                 correct_answer = num1 + num2
