@@ -81,28 +81,28 @@ class Quiz:
 
         self.addition_button = Button(self.operations_frame, text="Addition +",
                                       command=lambda: self.generate_questions("Addition"), padx=10, pady=10,
-                                      font="Helvetica 12", bg="cyan")
+                                      font="Helvetica 12", bg="purple")
         self.addition_button.grid(row=4, column=1)
 
         # Subtraction button, passes operation as "subtraction" to generate subtraction questions in function
 
         self.subtraction_button = Button(self.operations_frame, text="Subtraction -",
                                          command=lambda: self.generate_questions("Subtraction"), padx=10, pady=10,
-                                         font="Helvetica 12", bg="magenta")
+                                         font="Helvetica 12", bg="purple")
         self.subtraction_button.grid(row=4, column=2)
 
         # Multiplication button, passes operation as "multiplication" to generate multiplication questions in function
 
         self.multiplication_button = Button(self.operations_frame, text="Multiplication x",
                                             command=lambda: self.generate_questions("Multiplication"), padx=10, pady=10,
-                                            font="Helvetica 12", bg="orange")
+                                            font="Helvetica 12", bg="magenta")
         self.multiplication_button.grid(row=4, column=3)
 
         # Division button, passes oepration as "division" to generate division questions in function
 
         self.division_button = Button(self.operations_frame, text="Division /",
                                       command=lambda: self.generate_questions("Division"), padx=10, pady=10,
-                                      font="Helvetica 12", bg="yellow")
+                                      font="Helvetica 12", bg="magenta")
         self.division_button.grid(row=4, column=4)
 
         self.quiz_frame = Frame()
@@ -170,13 +170,13 @@ class Quiz:
 
         self.show_export_button = Button(self.export_frame, text="Export", justify=CENTER, state=DISABLED,
                                          command=lambda: self.export(self.quiz_history), padx=100, pady=5,
-                                         font="Helvetica 12", bg="#9A9AFF")
+                                         font="Helvetica 12", bg="silver")
         self.show_export_button.grid(row=1, column=0)
 
         # The fun zone button, activated only when the user scores 100% one any given quiz
 
         self.fun_zone_button = Button(self.export_frame, text="Fun Zone", justify=CENTER, state=DISABLED,
-                                      command=self.fun, padx=100, pady=5, font="Helvetica 12", bg="gold")
+                                      command=self.fun, padx=100, pady=5, font="Helvetica 12", bg="#F8B88B")
         self.fun_zone_button.grid(row=1, column=1)
 
         # The help button, which opens the Help/Instructions window, open at all times
